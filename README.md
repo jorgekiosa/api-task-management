@@ -22,6 +22,33 @@ Authentication: User registration and login with password encryption.
 Authorization: JWT-based access control to protect API endpoints.
 ```
 
+## Database Schema
+The database ##task_management includes the following tables:
+
+## Users Table 
+
+```bash
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `name` varchar(60) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `password` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+```
+
+## Tasks Table
+
+```bash
+CREATE TABLE `tasks` (
+  `id` int(11) NOT NULL,
+  `task` varchar(120) NOT NULL,
+  `description` varchar(500) NOT NULL,
+  `responsible` varchar(80) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+```
+
 ## Install the dependencies
 ```bash
 yarn
