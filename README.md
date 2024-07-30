@@ -33,3 +33,24 @@ npm install
 ```bash
 npm start
 ```
+
+## Available Endpoints
+```bash
+  ## Authentication
+POST /login: Authenticates a user and returns a JWT token.
+POST /register: Registers a new user.
+
+  ## Users
+GET /users: List all users (requires authentication).
+GET /users/:id: Get details of a specific user (requires authentication).
+PUT /users/:id: Update user information (requires authentication).
+DELETE /users/:id: Delete a user (requires authentication).
+
+## Tasks
+POST /tasks: Create a new task (requires authentication).
+GET /tasks: List all tasks (requires authentication).
+GET /tasks/:id: Get details of a specific task (requires authentication).
+PUT /tasks/:id: Update a task (requires authentication).
+DELETE /tasks/:id: Delete a task (requires authentication).
+
+```
