@@ -36,11 +36,11 @@ npm start
 
 ## Available Endpoints
 ```bash
-  ## Authentication
+## Authentication
 POST /login: Authenticates a user and returns a JWT token.
 POST /register: Registers a new user.
 
-  ## Users
+## Users
 GET /users: List all users (requires authentication).
 GET /users/:id: Get details of a specific user (requires authentication).
 PUT /users/:id: Update user information (requires authentication).
