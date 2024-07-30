@@ -23,7 +23,7 @@ Authorization: JWT-based access control to protect API endpoints.
 ```
 
 ## Database Schema
-The database ##task_management includes the following tables:
+The database "task_management" includes the following tables:
 
 ## Users Table 
 
